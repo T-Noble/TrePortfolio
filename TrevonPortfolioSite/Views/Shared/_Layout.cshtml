@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TrevonPortfolioSite</title>
+    @* <title>@ViewData["Title"] - TrevonPortfolioSite</title> *@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TrevonPortfolioSite.styles.css" asp-append-version="true" />
+     <!-- Google Fonts API -->
+    @* <link href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyD5yxmqmHrb_zYDTGkiNEFouVMEMKjc-M4[&family=Oxanium]" rel="stylesheet"> *@
+    @*  *@
 </head>
 <body>
-    <header>
+    @* <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Trevon's Development Journey</a>
@@ -39,18 +42,20 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> *@
+
+    <header></header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    @* <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - TrevonPortfolioSite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

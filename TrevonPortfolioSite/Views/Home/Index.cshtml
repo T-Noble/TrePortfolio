@@ -1,25 +1,54 @@
-﻿@{
+﻿@* @{
     ViewData["Title"] = "Home Page";
-}
+} *@
 
-@* <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div> *@
+@*"dotnet watch run" and "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/output.css --watch"*@
+<!DOCTYPE html>
+<html lang="en">
+<html>
 
-@* Header with My picture and Title *@
-<div id="HeaderPicAndTitle" >
-    <div>
-        <img src="/Images/RedSuitCropped.png" style="border-radius: 8%;float:left; width:16%;" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./site.css" rel="stylesheet">
+    <title>Home Page - TrevonPortfolioSite</title>
+</head>
+
+<body>
+    @* Header with My picture and Title *@
+    @* Best practice is Kebab-case for HTML *@
+    <div id="Landing-page" class="Page">
+
+        <div class="Introduction Page">
+            <h1>
+                Hello, <span>I'm Trevon.</span>
+                <br>I'm a Full Stack Web Developer.
+            </h1>
+
+            <button class="Selection-Box">
+                View my work below
+            </button>
+        </div>
+
+        <div class="About-Page Page">@Html.Partial("About")</div>
+
+        <div class="Sql-Page Page">@Html.Partial("SqlWork")</div>
+
+        <div class="Projects-Page Page">@Html.Partial("Projects")</div>
+
+        <div class="Contact-Page Page">@Html.Partial("Contact")</div>
+
     </div>
 
-    <div style="background-color: red; margin-left: 20%; margin-right: 10%; padding-bottom: 7.7%;" >
-        <p>
-            Full Stack Developer
-        </p>
-        <p>
-            Enter description here
-        </p>
-    </div>
-</div>
+    @*
+    Profile image of myself in red suit
+    <img src="/Images/RedSuitCropped.png" style="border-radius: 8%;float:left; width:16%;" />
+    *@
+</body>
 
+<footer>
+
+</footer>
+
+
+</html>

@@ -40,5 +40,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
+app.MapGet("/google-fonts", async () => {
+    using var client = new HttpClient();
+    string googleFontsUrl = "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyD5yxmqmHrb_zYDTGkiNEFouVMEMKjc-M4[&family=Oxanium]";
+    var response = await client.GetStringAsync(googleFontsUrl);
+    return Results.Text(response, "text/css");
+});
+
 app.Run();
 

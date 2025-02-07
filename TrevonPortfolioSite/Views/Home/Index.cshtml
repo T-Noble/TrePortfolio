@@ -1,6 +1,10 @@
-﻿@* @{
-    ViewData["Title"] = "Home Page";
-} *@
+﻿@{
+    @* Using ViewData will allow me to change the section title text in one central place *@
+    ViewData["Section-1"] = "About";
+    ViewData["Section-2"] = "SQL Work";
+    ViewData["Section-3"] = "Projects";
+    ViewData["Section-4"] = "Contact";
+}
 
 @*"dotnet watch run" and "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/output.css --watch"*@
 <!DOCTYPE html>
@@ -21,7 +25,7 @@
 
         <div class="Introduction Page">
             <h1>
-                Hello, <span>I'm Trevon.</span>
+                Hello, <span class="Introduction-My-Name">I'm Trevon.</span>
                 <br>I'm a Full Stack Web Developer.
             </h1>
 

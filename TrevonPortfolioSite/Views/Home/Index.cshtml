@@ -9,12 +9,13 @@
 @*"dotnet watch run" and "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/output.css --watch"*@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./site.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async src="~/js/site.js"></script>
     <title>Home Page - TrevonPortfolioSite</title>
 </head>
 
@@ -34,13 +35,13 @@
             </button>
         </div>
 
-        <div class="About-Page Page">@Html.Partial("About")</div>
+        <div id="About-page" class="About-Page Page">@Html.Partial("About")</div>
 
-        <div class="Sql-Page Page">@Html.Partial("SqlWork")</div>
+        <div id="Sql-page" class="Sql-Page Page">@Html.Partial("SqlWork")</div>
 
-        <div class="Projects-Page Page">@Html.Partial("Projects")</div>
+        <div id="Projects-page" class="Projects-Page Page">@Html.Partial("Projects")</div>
 
-        <div class="Contact-Page Page">@Html.Partial("Contact")</div>
+        <div id="Contact-page" class="Contact-Page Page">@Html.Partial("Contact")</div>
 
     </div>
 

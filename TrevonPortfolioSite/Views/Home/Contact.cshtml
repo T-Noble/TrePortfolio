@@ -1,3 +1,33 @@
 <div class="Page-Header">
     @ViewData["Section-4"]
 </div>
+
+<div class="Contact-container">
+    <div class="Container-header">
+        Looking to connect with me further? Leave your information and I'll get back to you as soon as possible.
+    </div>
+
+    <div class="Contact-container-form">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="contact-reason">Contacting for: </label>
+            <select id="contact-reason" name="contact-reason">
+                <option value="australia">Open position</option>
+                <option value="canada">Development work</option>
+                <option value="canada">Book a coffee chat</option>
+                <option value="canada">Fitness advice</option>
+                <option value="usa">General Inquiry</option>
+            </select>
+
+            <label for="subject">Message Content</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>

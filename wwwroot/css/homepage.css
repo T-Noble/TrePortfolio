@@ -1,0 +1,43 @@
+.myImageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.myImageContainer img {
+    height: auto;
+    max-width: 300px;
+    min-width: 100px;
+    max-height: 150vh;
+    float: left;
+    margin-right: 2rem;
+    border: 10px solid #272822;
+    border-radius: 25px;
+}
+
+.aboutMe {
+    padding: 1rem;
+}
+
+.aboutMe h1 {
+    /* scales between 1.5rem and 2.5rem */
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
+    margin-bottom: 0.5rem;
+}
+
+.aboutMe p {
+    /* scales between 1rem and 1.25rem */
+    font-size: clamp(1rem, 1.8vw, 1.25rem); 
+    line-height: 1.6;
+}
+
+/* Handling Text on mobile, smaller screens */
+@media (max-width: 768px) {
+    .myImageContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .myImageContainer img {
+        margin-right: 0;
+    }
+}

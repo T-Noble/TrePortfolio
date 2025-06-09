@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="/css/layout.css" />
+</head>
+<body>
+    <div class="site_Wrapper">
+        <header>
+                <div class="site_NavBar">
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                    @* Place your Navigation bar items here *@
+                    @* <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a> *@
+                    <div>
+                        <a class="" asp-area="" asp-controller="Skills" asp-action="Index">Skills</a>
+                        <a class="" asp-area="" asp-controller="Projects" asp-action="Index">Projects</a>
+                        <a class="" asp-area="" asp-controller="Resume" asp-action="Index">Resume</a>
+                    </div>
+                    
+                </div>
+        </header>
+
+        <main class="site_Container">
+            <div role="main_Container" class="main_Container">
+                @RenderBody()
+            </div>
+        </main>
+
+        <footer >
+            <div class="site_Footer">
+                <a href="https://www.linkedin.com/in/trevonnoble/" target="_blank">LinkedIn</a>
+                <a href="mailto:Trevon.noble@outlook.com">Contact Me</a>
+            </div>
+
+            @* <div>
+                <a href="https://www.w3schools.com">
+                    <img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">
+                </a>
+            </div> *@
+        </footer>
+    </div>
+</body>
+</html>

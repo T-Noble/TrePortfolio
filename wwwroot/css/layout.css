@@ -1,0 +1,80 @@
+/* Entire site */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #e1e1e1;
+}
+
+.site_Wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site_Container {
+  flex: 1;
+}
+
+/* Top Navigation Bar */
+.site_NavBar {
+  overflow: hidden;
+  background-color: #272822;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 72px;
+  box-sizing: border-box;
+}
+
+.site_NavBar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.site_NavBar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.site_NavBar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Main Container of Pages */
+.main_Container {
+  padding: 10px;
+}
+
+/* Bottom Navigation Bar */
+.site_Footer {
+  background-color: #272822;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 72px;
+  box-sizing: border-box;
+}
+
+.site_Footer a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.site_Footer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.site_Footer a.active {
+  background-color: #04AA6D;
+  color: white;
+}

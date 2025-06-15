@@ -78,3 +78,12 @@ html, body {
   background-color: #04AA6D;
   color: white;
 }
+
+.scroll-container {
+  background-color: #333;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  border: 10px solid #333; /* <-- Full visible border */
+  box-sizing: border-box;  /* Ensure padding doesn't overflow the container */
+}

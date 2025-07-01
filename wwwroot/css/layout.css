@@ -5,6 +5,18 @@ html, body {
   background-color: #e1e1e1;
 }
 
+body > div > header {
+  top: 0;
+  position: sticky;
+  width: 100%;
+}
+
+body > div > footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
 .site_Wrapper {
   display: flex;
   flex-direction: column;

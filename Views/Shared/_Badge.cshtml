@@ -1,0 +1,13 @@
+@model TreDotNetApp2.Models.BadgeModel
+
+<div class="_Badge">
+    <div style="background-color:@Model.BackgroundColor;">
+        <img class="image"
+        src="@Model.ImageUrl" 
+        alt="@Model.Title" 
+        style="max-width: 150px;" 
+        />
+        <h2 class="title">@Model.Title</h2>
+        <p class="description">@Model.Description</p>
+    </div>
+</div>

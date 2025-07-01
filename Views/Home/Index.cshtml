@@ -1,16 +1,43 @@
 ﻿<link rel="stylesheet" href="/css/homepage.css" />
 
+<script src="~/js/HomePage.js"></script>
+
 <main class="site_Container">
     <div class="main_Container">
+
         <div class="myImageContainer">
             <img src="https://trevondotnetappstorage.blob.core.windows.net/images-self/ECPIGradPic_Trevon.jpg" alt="My Image" />
             
             <div class="aboutMe">
                 <h1>Hello! I'm Tre'von </h1>
-                <p>I'm a Full Stack Developer who builds reliable, scalable web applications using technologies like .NET, SQL Server, and Microsoft Azure. I enjoy solving real-world problems through clean code, thoughtful architecture, and cloud-first design. Whether it's developing secure APIs, optimizing data flow, or deploying to the cloud, I'm focused on delivering production-ready solutions that make an impact. </p>
+                <p>I'm a backend-focused Full Stack Developer with experience in maintaining and evolving legacy systems, contributing to highly stable enterprise applications, and collaborating across cross-functional teams. I specialize in .NET and SQL Server development and have recently expanded into CI/CD, cloud technologies, and API design. My passion lies in building robust backend systems, improving code quality through automation, and applying modern software practices to real-world systems.
+                </p>
+                <h2 title="Click me or scroll down to view my specialties">My Technical specialties @Html.Partial("_DownArrow")</h2>
             </div>
-            
         </div>
-        <div class="remainingBodyContainer"></div>
+
+        <div class="remainingBodyContainer">
+            @Html.Partial("_Badge", new TreDotNetApp2.Models.BadgeModel {
+            Title = "C#", 
+            Description = "A modern, object-oriented programming language developed by Microsoft. Commonly used for backend systems, APIs, and enterprise applications using the .NET platform.",
+            ImageUrl = Url.Content("~/images/CSharp.svg"),
+            BackgroundColor = "color(srgb 0.2191 0.2903 0.4401)"
+            })
+
+            @Html.Partial("_Badge", new TreDotNetApp2.Models.BadgeModel {
+            Title = "Microsoft SQL Server", 
+            Description = "A relational database management system by Microsoft used for storing and querying structured data. Often paired with .NET apps for efficient data operations and reporting",
+            ImageUrl = Url.Content("~/images/Microsoft-Sql-server-logo.svg"),
+            BackgroundColor = "color(srgb 0.5418 0.0659 0.1435)"
+            })
+
+            @Html.Partial("_Badge", new TreDotNetApp2.Models.BadgeModel {
+            Title = "JavaScript", 
+            Description = "A dynamic scripting language used to build interactive and responsive web interfaces. Core to modern web development alongside HTML and CSS",
+            ImageUrl = Url.Content("~/images/Javascript-logo.svg"),
+            BackgroundColor = "color(srgb 0.8974 0.6879 0)"
+            })
+        </div>
+
     </div>
 </main>

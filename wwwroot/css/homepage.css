@@ -1,6 +1,7 @@
 .myImageContainer {
     display: flex;
     align-items: center;
+    margin-top: 11%;
 }
 
 .myImageContainer img {
@@ -10,7 +11,7 @@
     max-height: 150vh;
     float: left;
     margin-right: 2rem;
-    border: 10px solid #272822;
+    /* border: 10px solid #272822; */
     border-radius: 25px;
 }
 
@@ -22,12 +23,13 @@
     /* scales between 1.5rem and 2.5rem */
     font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
     margin-bottom: 0.5rem;
+    font-family: Ayuthaya;
 }
 
 .aboutMe p {
     /* scales between 1rem and 1.25rem */
-    font-size: clamp(1rem, 1.8vw, 1.25rem); 
     line-height: 1.6;
+    font-family: Ayuthaya;
 }
 
 /* Handling Text on mobile, smaller screens */
@@ -40,4 +42,41 @@
     .myImageContainer img {
         margin-right: 0;
     }
+}
+
+.remainingBodyContainer {
+    display: flex;
+    margin-top: 65%;
+    margin-bottom: 65%;
+}
+
+._Badge {
+    /* width: 160px; */
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: Ayuthaya;
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+}
+._Badge .title {
+    font-size: 1.65rem;
+    font-weight: bold;
+    text-shadow: 4px 3px black;
+    margin-top: 8px;
+}
+._Badge .description {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-top: 4px;
+}
+._Badge .image {
+    width: 100%;
+    padding-top: 10px;
+    height: auto;
+    max-height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 8px auto;
 }

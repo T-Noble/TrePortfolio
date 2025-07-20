@@ -1,7 +1,7 @@
 .myImageContainer {
     display: flex;
     align-items: center;
-    margin-top: 11%;
+    margin-top: 3%;
 }
 
 .myImageContainer img {
@@ -46,6 +46,7 @@
 
 .remainingBodyContainer {
     display: flex;
+    /* margin-top: 5%; */
 }
 
 ._Badge {
@@ -77,4 +78,33 @@
     object-fit: contain;
     display: block;
     margin: 0 auto 8px auto;
+}
+
+._BadgeSmall {
+    background-color: color(srgb 0.2191 0.2903 0.4401); 
+    width:25vw; 
+    border-radius:15px; 
+    padding:10px; 
+    color:white; 
+    overflow:hidden; 
+    text-align: center;
+}
+
+.notificationContainer {
+    background-color: color(srgb 0.9524 0.7781 0);
+    font-weight: 600;
+    padding: 1% 5% 5px 5%;
+    animation: notify 20s ease-in-out infinite alternate;
+    position: relative;
+    max-width: fit-content;
+    border-radius: 10px;
+}
+
+@keyframes notify {
+    0% {
+        transform: translateX(0%);
+      }
+    100% {
+        transform: translateX(calc(100vw - 100%));
+      }
 }

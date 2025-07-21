@@ -6,9 +6,62 @@
 </head>
 
 <main class="site_Container">
-    <div style="font-size:2rem;margin-left:15%;font-weight: bolder;
-color: rgb(193, 58, 58);">~I JUST graduated June 2025! Website is being updated! Be patient~</div>
     <div class="main_Container">
-        Welcome to the skills page
+
+
+    <div style="margin-top: 2%;font-family: Ayuthaya;">
+            <h2>Technical skills</h2>
+
+            @* <p>
+                For a more comprehensive understanding of how I've employed these and more skills please visit the <a href="" target="">Skills Page</a>
+            </p>
+
+            <div style="display: flex;">
+                <div class="_BadgeSmall" >C#</div>
+                <div class="_BadgeSmall" >Sql Server</div>
+                <div class="_BadgeSmall" >Javascript</div>
+            </div> *@
+    </div>
+
+    <div class="remainingBodyContainer">
+        <div id="cSharpBadge">
+            @Html.Partial("_Badge", new TreDotNetApp2.Models.BadgeModel {
+                Title = "C#", 
+                Description = "A modern, object-oriented programming language developed by Microsoft. Commonly used for backend systems, APIs, and enterprise applications using the .NET platform.",
+                ImageUrl = Url.Content("~/images/CSharp.svg"),
+                BackgroundColor = "color(srgb 0.2191 0.2903 0.4401)"
+                })
+        </div>
+            
+            @* @Html.Partial("_DownArrow") *@
+
+        <div id="sqlServerBadge">
+                @Html.Partial("_Badge", new TreDotNetApp2.Models.BadgeModel {
+                Title = "Microsoft SQL Server", 
+                Description = "A relational database management system by Microsoft used for storing and querying structured data. Often paired with .NET apps for efficient data operations and reporting",
+                ImageUrl = Url.Content("~/images/Microsoft-Sql-server-logo.svg"),
+                BackgroundColor = "color(srgb 0.5418 0.0659 0.1435)"
+                })
+        </div>
+            
+            @* @Html.Partial("_DownArrow") *@
+
+        <div id="sqlServerBadge">
+                @Html.Partial("_Badge", new TreDotNetApp2.Models.BadgeModel {
+                Title = "JavaScript", 
+                Description = "A dynamic scripting language used to build interactive and responsive web interfaces. Core to modern web development alongside HTML and CSS",
+                ImageUrl = Url.Content("~/images/Javascript-logo.svg"),
+                BackgroundColor = "color(srgb 0.8974 0.6879 0)"
+                })
+        </div>
+            
+            @* @Html.Partial("_DownArrow") *@
+    </div>
+        
+
+
+
+
+
     </div>
 </main>

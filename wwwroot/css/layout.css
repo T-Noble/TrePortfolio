@@ -12,7 +12,7 @@ body > div > header {
 }
 
 body > div > footer {
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
   width: 100%;
 }
@@ -98,4 +98,86 @@ body > div > footer {
   padding: 10px;
   border: 10px solid #333; /* <-- Full visible border */
   box-sizing: border-box;  /* Ensure padding doesn't overflow the container */
+}
+
+.notificationContainer {
+  /* background: linear-gradient(180deg, color(srgb 0.9 0.7492 0.0855), color(srgb 0.575 0.4688 0.0086));
+  font-weight: 600;
+  padding: 1% 5% 5px 5%;
+  animation: notify 20s ease-in-out infinite alternate;
+  position: relative;
+  max-width: fit-content;
+  border-radius: 10px; */
+  background: linear-gradient(180deg, color(srgb 0.9 0.7492 0.0855), color(srgb 0.575 0.4688 0.0086));
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+  font-family: Euphemia UCAS;
+}
+
+/* @keyframes notify {
+  0% {
+      transform: translateX(0%);
+    }
+  100% {
+      transform: translateX(calc(100vw - 100%));
+    }
+} */
+
+/* Handling Text on mobile, smaller screens */
+@media (max-width: 768px) {
+  .myImageContainer {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .myImageContainer img {
+      margin-right: 0;
+  }
+}
+
+.remainingBodyContainer {
+  display: flex;
+  /* margin-top: 5%; */
+}
+
+._Badge {
+  /* width: 160px; */
+  border-radius: 40px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-family: Ayuthaya;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+}
+._Badge .title {
+  font-size: 1.65rem;
+  font-weight: bold;
+  text-shadow: 4px 3px black;
+  margin-top: 8px;
+}
+._Badge .description {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-top: 4px;
+}
+._Badge .image {
+  width: 100%;
+  padding-top: 10px;
+  height: auto;
+  max-height: 130px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+._BadgeSmall {
+  background-color: color(srgb 0.2191 0.2903 0.4401); 
+  width:25vw; 
+  border-radius:15px; 
+  padding:10px; 
+  color:white; 
+  overflow:hidden; 
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 {
     "appService.preDeployTask": "publish-release",
-    "appService.deploySubpath": "publish",
+    "appService.deploySubpath": "bin/Release/net8.0/publish",
     "appService.defaultWebAppToDeploy": "/subscriptions/d42e7dd2-edc2-4c98-9fd9-dc3845daf562/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/TreDotNetPortfolioApp"
 }

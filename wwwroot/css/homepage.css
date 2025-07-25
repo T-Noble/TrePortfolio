@@ -45,7 +45,7 @@
 }
 
 .myGifContainer {
-    /* display: flex;  */
+    display: flex; 
     margin-top: 3%;
     justify-content: center;
 }
@@ -56,7 +56,7 @@
         min-width: 100px;
         max-height: 150vh;
         float: left;
-        margin-right: 3rem;
+        /* margin-right: 3rem; */
         border-radius: 10px;
         border-block: 2px solid color(srgb 0.1517 0.1575 0.1348);
     }
@@ -75,6 +75,60 @@
         font-size: x-large;
         text-align: center;
     }
+
+    .gifWrapper {
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        margin: 0.5rem;
+    }
+    
+    .gifWrapper img {
+        position: relative;
+        display: inline-block;
+        width: 250px;
+        height: 200px;
+        transition: all 0.4s ease;
+    }
+    
+    .overlayText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 2;
+        pointer-events: none;
+        font-family: monospace;
+        font-size: 15px;
+        width: 250px;
+        line-height: 1.6;
+    }
+    
+    .gifWrapper::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* dark overlay */
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 1;
+    }
+    
+    /* .gifWrapper:hover img {
+        transform: scale(1.05); /* optional zoom effect 
+    } */
+    
+    .gifWrapper:hover::before,
+    .gifWrapper:hover .overlayText {
+        opacity: 1;
+    }
+    
 
 .remainingBodyContainer {
     display: flex;
